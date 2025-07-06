@@ -98,7 +98,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-us-east-1-7fb22fd4-da8e",
-          "S3Key": "serverless/sentiment-news-api/dev/1751839429733-2025-07-06T22:03:49.733Z/sentiment-news-api.zip"
+          "S3Key": "serverless/sentiment-news-api/dev/1751844362291-2025-07-06T23:26:02.291Z/sentiment-news-api.zip"
         },
         "Handler": "handler.handler",
         "Runtime": "nodejs18.x",
@@ -122,14 +122,14 @@
         "GetNewsSentimentLogGroup"
       ]
     },
-    "GetNewsSentimentLambdaVersion7SVeBtYlDKH2Sb2iejCj9C9nMYDlLCKpeDTD3QrQk": {
+    "GetNewsSentimentLambdaVersionidiNS3zTjhNJms4Rj67bO0DTHlQqgiXi7k9wH1qDc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetNewsSentimentLambdaFunction"
         },
-        "CodeSha256": "z124fN+vEalBOrt+ac5NLiejVVLRPQz7X7P3AwDxvBU="
+        "CodeSha256": "83VFOr1dZjeo0yISoON7UxWbjyQrZ7/mNhmmaN+O10Q="
       }
     },
     "ApiGatewayRestApi": {
@@ -250,7 +250,7 @@
         "GetNewsSentimentLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1751839424290": {
+    "ApiGatewayDeployment1751844354194": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -311,7 +311,7 @@
     "GetNewsSentimentLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetNewsSentimentLambdaVersion7SVeBtYlDKH2Sb2iejCj9C9nMYDlLCKpeDTD3QrQk"
+        "Ref": "GetNewsSentimentLambdaVersionidiNS3zTjhNJms4Rj67bO0DTHlQqgiXi7k9wH1qDc"
       },
       "Export": {
         "Name": "sls-sentiment-news-api-dev-GetNewsSentimentLambdaFunctionQualifiedArn"

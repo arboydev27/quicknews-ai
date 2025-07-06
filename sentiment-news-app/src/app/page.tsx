@@ -10,7 +10,7 @@ const Home = () => {
 
   const [keyword, setKeyword] = useState("");
   const [results, setResults] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); //Put true to show loading state
   const [error, setError] = useState("");
 
 
