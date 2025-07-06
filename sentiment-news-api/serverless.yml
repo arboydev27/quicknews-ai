@@ -1,0 +1,29 @@
+service: sentiment-news-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    NEWS_API_KEY: ${env:NEWS_API_KEY}
+  iamRoleStatements:
+    - Effect: Allow
+      Action: comprehend:DetectSentiment
+      Resource: "*"
+
+functions:
+  getNewsSentiment:
+    handler: handler.handler
+    events:
+      - http:
+          path: news
+          method: get
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+            allowCredentials: false
