@@ -49,5 +49,5 @@ QuickNews.ai was built in under **6 hours** to combine rapid technical learning 
 
 ---
 
-> Built with ❤️ by [Your Name](https://github.com/yourusername).
+> Built with ❤️ by [Arboy Magomba](https://github.com/arboydev27).
 
