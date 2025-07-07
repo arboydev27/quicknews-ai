@@ -28,8 +28,6 @@ Not every CS major has to be “cracked.” Build and ship fast. Do what you enj
 
 QuickNews.ai was built in under **6 hours** to combine rapid technical learning with practical problem-solving.
 
-### 📷 Preview
-
 ## 📷 Preview
 
 <table>
