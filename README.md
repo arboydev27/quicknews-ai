@@ -30,11 +30,24 @@ QuickNews.ai was built in under **6 hours** to combine rapid technical learning 
 
 ### 📷 Preview
 
-<p float="left">
-  <img src="sentiment-news-app/public/preview1.png" width="50%" />
-  <img src="sentiment-news-app/public/preview2.png" width="50%" />
-  <img src="sentiment-news-app/public/preview3.png" width="50%" />
-</p>
+## 📷 Preview
+
+<table>
+  <tr>
+    <td rowspan="2">
+      <img src="sentiment-news-app/public/preview1.png" width="400"/>
+    </td>
+    <td>
+      <img src="sentiment-news-app/public/preview2.png" width="200"/>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="sentiment-news-app/public/preview3.png" width="200"/>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
