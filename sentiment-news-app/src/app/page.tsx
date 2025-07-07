@@ -38,8 +38,14 @@ const Home = () => {
   return (
     <main className="min-h-screen min-w-screen bg-[#E6E8EA] flex flex-col justify-center items-center p-5 space-y-4">
       <div className="flex flex-row justify-center items-center space-x-2">
-        <SiGooglenews className="text-black h-10 w-10"/>
-        <div className="text-[#010419] text-2xl font-semibold tracking-tight">QuickNews.ai</div>
+        {/* <SiGooglenews className="text-black h-10 w-10"/> */}
+        <Image
+          src="/logo.png"
+          alt="QuickNews Logo"
+          width={40}
+          height={40}
+        />
+        <div className="text-[#010419] text-2xl font-bold tracking-tight">QuickNews.ai</div>
       </div>
       <div className="text-4xl font-extrabold text-[#4051B5] tracking-tight">Welcome to QuickNews</div>
       
