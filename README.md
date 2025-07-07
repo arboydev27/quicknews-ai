@@ -1,4 +1,6 @@
-# <img src="sentiment-news-app/public/logo.png" alt="QuickNews.ai Logo" width="40" style="display:inline;" /> QuickNews.ai
+<h1>
+  <img src="sentiment-news-app/public/logo.png" alt="QuickNews.ai Logo" width="40" style="vertical-align:middle;"/> QuickNews.ai
+</h1>
 
 QuickNews.ai is a lightning-fast news summarization and sentiment analysis web app that helps you stay informed without information overload.
 
