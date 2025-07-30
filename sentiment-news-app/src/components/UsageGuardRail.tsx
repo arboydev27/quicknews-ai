@@ -1,5 +1,5 @@
 // usageGuardRail.tsx
-export function checkDailyUsageLimit(limit: number = 1) {
+export function checkDailyUsageLimit(limit: number = 10) {
   if (typeof window === "undefined") {
     return { allowed: true, currentCount: 0 }; // SSR-safe fallback
   }
