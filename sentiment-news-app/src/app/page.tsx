@@ -66,12 +66,12 @@ const Home = () => {
       </div>
 
       <div className="text-[#6D727C] text-center">
-        QuickNews lets you instantly analyze the latest news headlines for any
-        topic.
-        <br />
-        Enter a keyword to see top news summaries and their
-        <br />
-        real-time AI-based sentiment insights.
+        <p>
+          QuickNews lets you instantly analyze the latest news headlines for any
+          topic
+        </p>
+        <p>Enter a keyword to see top news summaries and their</p>
+        <p>real-time AI-based sentiment insights</p>
       </div>
 
       <form
