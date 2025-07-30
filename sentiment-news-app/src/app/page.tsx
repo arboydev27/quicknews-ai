@@ -61,7 +61,7 @@ const Home = () => {
           QuickNews.ai
         </div>
       </div>
-      <div className="text-4xl font-extrabold text-[#4051B5] tracking-tight">
+      <div className="text-4xl font-extrabold text-[#4051B5] text-center tracking-tight">
         Welcome to QuickNews
       </div>
 
