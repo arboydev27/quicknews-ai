@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
+/* Theme tokens Tailwind turns into utilities: bg-bg, text-text, bg-card, text-accent, border-border, etc. */
+@theme {
+  --color-bg: var(--bg);
+  --color-text: var(--text);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+
+  /* Keep your explicit names too (so bg-lightBg still exists if you use it) */
+  --color-lightBg: #E6E8EA;
+  --color-lightCard: #FFFFFF;
+  --color-lightText: #010419;
+  --color-lightMuted: #6D727C;
+  --color-lightAccent: #4051B5;
+  --color-lightInput: #F9FAFB;
+  --color-lightInputText: #111827;
+  --color-lightInputBorder: #D1D5DB;
+  --color-lightInputRing: #3B82F6;
+  --color-lightHover: #1E40AF;
+  --color-lightSkeleton1: #D1D5DB;
+  --color-lightSkeleton2: #E5E7EB;
+
+  --color-darkBg: #0A0A0A;
+  --color-darkCard: #171717;
+  --color-darkText: #EDEDED;
+  --color-darkMuted: #A3A3A3;
+  --color-darkAccent: #4F8BFF;
+  --color-darkInput: #1E1E1E;
+  --color-darkInputText: #E5E7EB;
+  --color-darkInputBorder: #374151;
+  --color-darkInputRing: #2563EB;
+  --color-darkHover: #3B82F6;
+  --color-darkSkeleton1: #2D2D2D;
+  --color-darkSkeleton2: #3A3A3A;
+}
+
+/* Light defaults */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #E6E8EA;
+  --text: #010419;
+  --card: #FFFFFF;
+  --accent: #4051B5;
+  --border: #D1D5DB;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Dark overrides (toggled by .dark on <html>) */
+html.dark {
+  --bg: #0A0A0A;
+  --text: #EDEDED;
+  --card: #171717;
+  --accent: #4F8BFF;
+  --border: #374151;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Apply tokens globally to the viewport */
+html, body { @apply bg-bg text-text; }
